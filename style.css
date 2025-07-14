@@ -4,6 +4,7 @@ body {
   background-color: #f8f8f8;
   color: white;
   scroll-behavior: smooth;
+  overflow-x: hidden;
 }
 
 h1,
@@ -201,7 +202,7 @@ h2 {
 }
 
 /* CANVAS STYLING */
-#policyChart {
+/* #policyChart {
   width: 100% !important;
   max-width: 700px !important;
   height: 350px !important;
@@ -209,7 +210,7 @@ h2 {
   padding: 20px;
   border-radius: 12px;
   box-shadow: 0 8px 24px rgba(0, 0, 0, 0.05);
-}
+} */
 
 /* Section 3 */
 
@@ -291,7 +292,7 @@ h2 {
 }
 
 .benefits-summary {
-  margin-top: 10px !important;
+  margin-top: 50px !important;
   font-size: 1.1rem;
   line-height: 1.6;
   text-align: center;
@@ -344,266 +345,6 @@ h2 {
   margin-bottom: 8px;
   font-size: 1.05rem;
   line-height: 1.5;
-}
-
-/* Section 4 */
-
-.section-use-cases {
-  background-color: #ffffff;
-  padding: 80px 20px;
-  border-radius: 16px;
-  max-width: 1100px;
-  margin: 60px auto;
-  border-top: 4px solid #05ff48;
-  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
-}
-
-.section-title {
-  font-size: 2rem;
-  font-weight: 700;
-  text-align: center;
-  background: linear-gradient(to right, #05ff48, #000);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
-  color: transparent;
-  margin-bottom: 40px;
-}
-
-/* Use Cards */
-.use-cards {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 30px;
-  justify-content: center;
-}
-
-.card {
-  background: #f9f9f9;
-  border: 1px solid #e0e0e0;
-  border-radius: 16px;
-  padding: 30px 20px;
-  text-align: center;
-  width: 180px;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.03);
-  cursor: pointer;
-}
-
-.card:hover {
-  transform: translateY(-10px);
-  box-shadow: 0 0 20px rgba(5, 255, 72, 0.3);
-}
-
-/* Icon Circle */
-.icon-circle {
-  width: 60px;
-  height: 60px;
-  margin: 0 auto 15px;
-  background: #e8ffe9;
-  border-radius: 50%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  transition: background 0.3s ease;
-}
-
-.card:hover .icon-circle {
-  background: #05ff48;
-}
-
-.icon-circle i {
-  font-size: 1.8rem;
-  color: #05b848;
-  transition: color 0.3s ease, transform 0.3s ease;
-}
-
-.card:hover .icon-circle i {
-  color: #000;
-  transform: scale(1.2);
-}
-
-/* Text */
-.card p {
-  margin: 0;
-  font-size: 1rem;
-  color: #333;
-  font-weight: 500;
-}
-
-/* Description */
-.use-description {
-  text-align: center;
-  margin-top: 50px;
-  font-size: 1.15rem;
-  line-height: 1.6;
-  max-width: 800px;
-  margin-left: auto;
-  margin-right: auto;
-  color: #222;
-}
-.use-description strong {
-  background: linear-gradient(to right, #05ff48, #000);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
-  color: transparent;
-}
-
-.card-desc {
-  font-size: 0.95rem;
-  color: #666;
-  margin-top: 10px;
-  line-height: 1.4;
-}
-
-/* Footer */
-
-.footer {
-  padding: 20px;
-  text-align: center;
-  background: #111;
-  color: #aaa;
-  border-top: 2px solid #05ff48;
-}
-
-/* Section 5 */
-
-.section-ev-policy {
-  background-color: #ffffff;
-  padding: 80px 20px;
-  border-radius: 16px;
-  max-width: 1100px;
-  margin: 60px auto;
-  border-top: 4px solid #05ff48;
-  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
-}
-
-.section-ev-policy .section-title {
-  font-size: 2rem;
-  font-weight: 700;
-  background: linear-gradient(to right, #05ff48, #000);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
-  color: transparent;
-  text-align: center;
-  margin-bottom: 50px;
-}
-
-/* Layout block with image */
-.policy-block {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  gap: 40px;
-  margin-bottom: 50px;
-}
-
-.policy-block.reverse {
-  flex-direction: row-reverse;
-}
-
-.policy-text {
-  flex: 1;
-  min-width: 280px;
-}
-
-.policy-text h3 {
-  font-size: 1.4rem;
-  margin-bottom: 10px;
-  color: #05b848;
-}
-
-.policy-text p {
-  font-size: 1.05rem;
-  color: #333;
-  line-height: 1.6;
-  margin-bottom: 8px;
-}
-
-.policy-text a {
-  color: #05b848;
-  font-size: 0.95rem;
-  text-decoration: underline;
-}
-
-.policy-text a:hover {
-  text-decoration: none;
-}
-
-.policy-image {
-  flex: 1;
-  min-width: 280px;
-  position: relative;
-  overflow: hidden;
-  height: auto;
-}
-
-.policy-image img {
-  width: 100%;
-  height: auto;
-  object-fit: cover;
-  border-radius: 12px;
-  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.05);
-
-  /* Parallax-specific styles */
-  transform: translateY(0px);
-  transition: transform 0.2s ease-out;
-  will-change: transform;
-}
-
-
-/* List-based items (if any used within group) */
-.policy-group h3 {
-  font-size: 1.4rem;
-  margin-top: 30px;
-  color: #05b848;
-}
-
-.policy-list {
-  list-style: disc;
-  padding-left: 20px;
-  margin-top: 15px;
-}
-
-.policy-list li {
-  margin-bottom: 16px;
-  font-size: 0.9rem;
-  color: #333;
-  line-height: 1.6;
-}
-
-.policy-list li a {
-  color: #05b848;
-  font-size: 0.95rem;
-  margin-left: 10px;
-  text-decoration: underline;
-}
-
-.policy-list li a:hover {
-  text-decoration: none;
-}
-
-/* Summary */
-.policy-summary {
-  margin-top: 0;
-  font-size: 1.15rem;
-  font-weight: bold;
-  text-align: center;
-  background: linear-gradient(to right, #05ff48, #000);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text; /* for Firefox */
-  color: transparent;
-}
-
-/* Mobile responsiveness */
-@media (max-width: 768px) {
-  .policy-block,
-  .policy-block.reverse {
-    flex-direction: column;
-  }
 }
 
 .benefits-highlight-grid {
@@ -733,4 +474,391 @@ h2 {
   font-size: 1rem;
   color: #444;
   margin: 8px 0;
+}
+
+/* Base Unified Card Styles */
+.card-box {
+  background: #ffffff;
+  border: 1px solid #e0e0e0;
+  border-radius: 16px;
+  padding: 30px 25px;
+  width: 280px;
+  text-align: center;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.04);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+.card-box:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 12px 30px rgba(5, 255, 72, 0.15);
+}
+
+.card-icon {
+  width: 60px;
+  height: 60px;
+  margin: 0 auto 15px;
+  background: #e8ffe9;
+  color: #05b848;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.8rem;
+  transition: background 0.3s ease, transform 0.3s ease;
+}
+
+.card-box:hover .card-icon {
+  background: #05ff48;
+  color: #000;
+  transform: rotate(10deg) scale(1.2);
+}
+
+.card-title {
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: #222;
+  margin-bottom: 12px;
+}
+
+.card-box ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.card-box li {
+  font-size: 1rem;
+  color: #555;
+  margin: 8px 0;
+}
+
+.card-box p{
+  color: #000;
+}
+
+/* Highlighted EV Card */
+.ev-highlight {
+  border: 2px solid #05ff48;
+  box-shadow: 0 12px 28px rgba(5, 255, 72, 0.12);
+}
+
+.ev-highlight .card-title {
+  color: #05b848;
+}
+
+
+/* Section 4 */
+
+.section-use-cases {
+  background-color: #ffffff;
+  padding: 80px 20px;
+  border-radius: 16px;
+  max-width: 1100px;
+  margin: 60px auto;
+  border-top: 4px solid #05ff48;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+}
+
+.section-title {
+  font-size: 2rem;
+  font-weight: 700;
+  text-align: center;
+  background: linear-gradient(to right, #05ff48, #000);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  color: transparent;
+  margin-bottom: 40px;
+}
+
+/* Use Cards */
+.use-cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  justify-content: center;
+}
+
+.card {
+  background: #f9f9f9;
+  border: 1px solid #e0e0e0;
+  border-radius: 16px;
+  padding: 30px 20px;
+  text-align: center;
+  width: 180px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.03);
+  cursor: pointer;
+}
+
+.card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 0 20px rgba(5, 255, 72, 0.3);
+}
+
+/* Icon Circle */
+.icon-circle {
+  width: 60px;
+  height: 60px;
+  margin: 0 auto 15px;
+  background: #e8ffe9;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background 0.3s ease;
+}
+
+.card:hover .icon-circle {
+  background: #05ff48;
+}
+
+.icon-circle i {
+  font-size: 1.8rem;
+  color: #05b848;
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.card:hover .icon-circle i {
+  color: #000;
+  transform: scale(1.2);
+}
+
+/* Text */
+.card p {
+  margin: 0;
+  font-size: 1rem;
+  color: #333;
+  font-weight: 500;
+}
+
+/* Description */
+.use-description {
+  text-align: center;
+  margin-top: 50px;
+  font-size: 1.15rem;
+  line-height: 1.6;
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+  color: #222;
+}
+.use-description strong {
+  background: linear-gradient(to right, #05ff48, #000);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  color: transparent;
+}
+
+.card-desc {
+  font-size: 0.95rem;
+  color: #666;
+  margin-top: 10px;
+  line-height: 1.4;
+}
+
+
+/* Section 5 */
+
+.section-ev-policy {
+  background-color: #f8f8f8;
+  padding: 80px 20px;
+  max-width: 1500px;
+  margin: 0 auto;
+  border-radius: 16px;
+  box-shadow: 0 6px 30px rgba(0, 0, 0, 0.03);
+}
+
+.section-ev-policy .section-title {
+  font-size: 2.6rem;
+  font-weight: 800;
+  text-align: center;
+  margin-bottom: 60px;
+  letter-spacing: -0.5px;
+  background: linear-gradient(to right, #05ff48, #000);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.policy-block {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 50px;
+  margin-bottom: 70px;
+  border-left: 4px solid #05ff48;
+  padding-left: 30px;
+}
+
+.policy-block.reverse {
+  flex-direction: row-reverse;
+  border-left: none;
+  border-right: 4px solid #05ff48;
+  padding-left: 0;
+  padding-right: 30px;
+}
+
+.policy-text {
+  flex: 1;
+  min-width: 300px;
+}
+
+.policy-text h3 {
+  font-size: 1.6rem;
+  font-weight: 700;
+  color: #05b848;
+  margin-bottom: 20px;
+}
+
+.policy-text p,
+.policy-list li {
+  font-size: 1.05rem;
+  color: #333;
+  line-height: 1.8;
+  margin-bottom: 14px;
+  position: relative;
+  padding-left: 26px;
+}
+
+.policy-list {
+  list-style: none;
+  padding-left: 0;
+}
+
+.policy-list li::before {
+  content: "✔";
+  color: #05b848;
+  font-size: 1rem;
+  position: absolute;
+  left: 0;
+  top: 0.5em;
+  line-height: 1;
+}
+
+.policy-text strong {
+  color: #111;
+  font-weight: 600;
+}
+
+.policy-text a {
+  color: #05b848;
+  font-weight: 500;
+  text-decoration: none;
+  position: relative;
+}
+
+.policy-text a::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 1px;
+  bottom: -2px;
+  left: 0;
+  background-color: #05b848;
+  transition: transform 0.3s ease;
+  transform: scaleX(0);
+  transform-origin: left;
+}
+
+.policy-text a:hover::after {
+  transform: scaleX(1);
+}
+
+.policy-image {
+  flex: 1;
+  min-width: 280px;
+  position: relative;
+}
+
+.policy-image img {
+  width: 100%;
+  border-radius: 14px;
+  object-fit: cover;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+  transition: transform 0.4s ease;
+}
+
+.policy-image img:hover {
+  transform: scale(1.02);
+}
+
+.policy-summary {
+  font-size: 1.25rem;
+  font-weight: 700;
+  text-align: center;
+  margin-top: 40px;
+  background: linear-gradient(to right, #05ff48, #000);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.policy-highlight {
+  background: #eafff0;
+  border-left: 5px solid #05b848;
+  padding: 18px 20px;
+  margin-top: 30px;
+  margin-bottom: 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.03);
+  transition: background 0.3s ease;
+}
+
+.policy-highlight:hover {
+  background: #dbffe7;
+}
+
+.policy-highlight p {
+  margin-bottom: 12px;
+  line-height: 1.7;
+  font-size: 1.05rem;
+  color: #222;
+}
+
+.policy-highlight strong {
+  font-weight: 600;
+  color: #0a4b2a;
+}
+
+.policy-highlight a {
+  color: #05b848;
+  font-weight: 500;
+  margin-left: 8px;
+  text-decoration: underline;
+  transition: all 0.25s ease;
+}
+
+.policy-highlight a:hover {
+  text-decoration: none;
+  color: #038c36;
+}
+
+@media (max-width: 768px) {
+  .policy-block,
+  .policy-block.reverse {
+    flex-direction: column;
+    padding: 0;
+    border: none;
+  }
+
+  .section-ev-policy .section-title {
+    font-size: 2rem;
+  }
+
+  .policy-text h3 {
+    font-size: 1.4rem;
+  }
+}
+
+
+/* Footer */
+
+.footer {
+  padding: 20px;
+  text-align: center;
+  background: #111;
+  color: #aaa;
+  border-top: 2px solid #05ff48;
 }

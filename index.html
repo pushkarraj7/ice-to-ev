@@ -19,6 +19,7 @@
       href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500&display=swap"
       rel="stylesheet"
     />
+    <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet" />
   </head>
   <body>
     <header class="hero">
@@ -68,92 +69,102 @@
       </div>
     </section> -->
 
-    <section class="section section-ev-policy" id="section5">
+    <section class="section-ev-policy" id="section5">
       <div class="section-inner">
-        <h2 class="section-title">
+        <h2 class="section-title" data-aos="fade-up">
           Policy Supports for Powering the EV Movement
         </h2>
 
         <!-- 🔰 Block 1: Delhi EV Policy -->
-        <div class="policy-block">
-          <div class="policy-text">
+        <div class="policy-block" data-aos="fade-right">
+          <div class="policy-text" data-aos="fade-up" data-aos-delay="100">
             <h3>Delhi’s EV Policy 2.0 Highlights</h3>
             <ul class="policy-list">
-              <li>
+              <li data-aos="fade-up" data-aos-delay="200">
                 <strong>ICE Three-Wheelers:</strong> No new registration after
                 August 2025; existing CNG permits converted to EV-only.
                 <a
                   href="https://www.downtoearth.org.in/energy/delhi-ev-policy-20-its-bold-but-not-yet-beautiful?"
                   target="_blank"
-                  >Source</a
+                  >Read More</a
                 >
               </li>
-              <li>
+              <li data-aos="fade-up" data-aos-delay="300">
                 <strong>ICE Two-Wheelers:</strong> New registrations banned from
                 August 2026; strong incentives and subsidies continue.
                 <a
                   href="https://www.financialexpress.com/auto/bike-news/no-more-petrol-two-wheelers-in-delhi-what-ev-policy-2-0-means-for-you/3809253/?"
                   target="_blank"
-                  >Source</a
+                  >Read More</a
                 >
               </li>
-              <li>
+              <li data-aos="fade-up" data-aos-delay="400">
                 <strong>ICE Cars:</strong> Limit to two ICE cars per
                 household—third must be electric.
                 <a
                   href="https://www.financialexpress.com/auto/car-news/delhi-ev-policy-2-0-only-2-ice-cars-per-family-to-be-allowed/3821981/?"
                   target="_blank"
-                  >Source</a
+                  >Read More</a
                 >
               </li>
-              <li>
+            </ul>
+
+            <div
+              class="policy-highlight"
+              data-aos="fade-up"
+              data-aos-delay="500"
+            >
+              <p>
                 <strong>Goal:</strong> 95% of new registrations electric by
                 2027, rising to 98% by 2030.
                 <a
                   href="https://e-vehicleinfo.com/delhi-ev-policy-2-0/?"
                   target="_blank"
-                  >Source</a
+                  >Read More</a
                 >
-              </li>
-              <li>
+              </p>
+
+              <p>
                 <strong>Infrastructure:</strong> Fast-charging every 5 km,
                 battery swapping hubs, and ~20,000 EV jobs.
                 <a
                   href="https://www.reuters.com/sustainability/climate-energy/indias-delhi-plans-curb-gasoline-car-sales-ban-gas-guzzling-bikes-shed-polluter-2025-04-24/?"
                   target="_blank"
-                  >Source</a
+                  >Read More</a
                 >
-              </li>
-            </ul>
+              </p>
+            </div>
           </div>
-          <div class="policy-image">
+
+          <div class="policy-image" data-aos="zoom-in">
             <img src="assets/img.webp" alt="Delhi EV Policy" />
           </div>
         </div>
 
         <!-- 🔁 Block 2: National + Global -->
-        <div class="policy-block reverse">
-          <div class="policy-text">
+        <div class="policy-block reverse" data-aos="fade-left">
+          <div class="policy-text" data-aos="fade-up" data-aos-delay="100">
             <h3>Nationwide & Global</h3>
             <ul class="policy-list">
-              <li>
+              <li data-aos="fade-up" data-aos-delay="200">
                 <strong>India (FAME II):</strong> Subsidies for retrofitted EVs,
                 public transport electrification, and infrastructure
                 development.
               </li>
-              <li>
+              <li data-aos="fade-up" data-aos-delay="300">
                 <strong>Global:</strong> Countries like the UK, Germany, and US
                 offer tax credits, rebates, and low-emission zones to accelerate
                 EV adoption and ICE phase-outs.
               </li>
             </ul>
           </div>
-          <div class="policy-image">
-            <img src="assets/img.webp" alt="Delhi EV Policy" />
+
+          <div class="policy-image" data-aos="zoom-in-up">
+            <img src="assets/img.webp" alt="EV Policy Worldwide" />
           </div>
         </div>
 
-        <p class="policy-summary">
+        <p class="policy-summary" data-aos="fade-up" data-aos-delay="100">
           With strong policy backing, converting to EV isn’t just smart—it’s
           strategic.
         </p>
@@ -177,10 +188,9 @@
         </div>
 
         <div class="benefits-highlight-grid">
-          <!-- Fuel Cost Savings -->
-          <div class="highlight-box">
-            <div class="highlight-icon"><i class="fas fa-gas-pump"></i></div>
-            <h4 class="highlight-title">Fuel Cost Savings</h4>
+          <div class="card-box">
+            <div class="card-icon"><i class="fas fa-gas-pump"></i></div>
+            <h4 class="card-title">Fuel Cost Savings</h4>
             <ul>
               <li><strong>EV:</strong> ₹1.2/km</li>
               <li><strong>Diesel:</strong> ₹7/km</li>
@@ -188,10 +198,9 @@
             </ul>
           </div>
 
-          <!-- Travel Breakdown -->
-          <div class="highlight-box">
-            <div class="highlight-icon"><i class="fas fa-road"></i></div>
-            <h4 class="highlight-title">Travel Breakdown</h4>
+          <div class="card-box">
+            <div class="card-icon"><i class="fas fa-road"></i></div>
+            <h4 class="card-title">Travel Breakdown</h4>
             <ul>
               <li><strong>Daily:</strong> 100 km</li>
               <li><strong>Monthly:</strong> 3,000 km</li>
@@ -199,44 +208,45 @@
             </ul>
           </div>
         </div>
-
-        <!-- 💸 Cost Comparison Cards -->
         <h3 class="benefits-heading">Annual Fuel Cost Comparison</h3>
         <div class="comparison-grid">
-          <div class="comparison-card">
-            <h3>Petrol</h3>
+          <div class="card-box">
+            <div class="card-icon"><i class="fas fa-gas-pump"></i></div>
+            <h3 class="card-title">Petrol</h3>
             <p><strong>Cost/km:</strong> ₹9</p>
             <p><strong>Annual:</strong> ₹3,24,000</p>
           </div>
-          <div class="comparison-card">
-            <h3>Diesel</h3>
+
+          <div class="card-box">
+            <div class="card-icon"><i class="fas fa-gas-pump"></i></div>
+            <h3 class="card-title">Diesel</h3>
             <p><strong>Cost/km:</strong> ₹7</p>
             <p><strong>Annual:</strong> ₹2,52,000</p>
           </div>
-          <div class="comparison-card ev-highlight">
-            <h3>EV</h3>
+
+          <div class="card-box ev-highlight">
+            <div class="card-icon"><i class="fas fa-bolt"></i></div>
+            <h3 class="card-title">EV</h3>
             <p><strong>Cost/km:</strong> ₹1.2</p>
             <p><strong>Annual:</strong> ₹43,200</p>
           </div>
         </div>
 
         <div class="benefits-grid">
-          <!-- 🔢 Monthly Cost Example -->
-          <div class="benefit-card">
-            <div class="benefit-icon"><i class="fas fa-calendar-alt"></i></div>
-            <h4 class="benefit-title">Monthly Cost Example</h4>
-            <ul class="benefit-list">
-              <li><strong>EV:</strong> 3,000 km × ₹1.2 = ₹3,600</li>
-              <li><strong>Diesel:</strong> 3,000 km × ₹7 = ₹21,000</li>
-              <li><strong>Petrol:</strong> 3,000 km × ₹9 = ₹27,000</li>
+          <div class="card-box">
+            <div class="card-icon"><i class="fas fa-calendar-alt"></i></div>
+            <h4 class="card-title">Monthly Cost Example</h4>
+            <ul>
+              <li><strong>EV:</strong> ₹3,600</li>
+              <li><strong>Diesel:</strong> ₹21,000</li>
+              <li><strong>Petrol:</strong> ₹27,000</li>
             </ul>
           </div>
 
-          <!-- 💰 Annual Savings -->
-          <div class="benefit-card">
-            <div class="benefit-icon"><i class="fas fa-wallet"></i></div>
-            <h4 class="benefit-title">Annual Savings with EV</h4>
-            <ul class="benefit-list">
+          <div class="card-box">
+            <div class="card-icon"><i class="fas fa-wallet"></i></div>
+            <h4 class="card-title">Annual Savings with EV</h4>
+            <ul>
               <li><strong>vs Diesel:</strong> ₹2,08,800</li>
               <li><strong>vs Petrol:</strong> ₹2,80,800</li>
             </ul>
@@ -305,6 +315,15 @@
     </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+    <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+    <script>
+      AOS.init({
+        duration: 800,
+        offset: 100,
+        once: true,
+      });
+    </script>
 
     <script>
       document.addEventListener("DOMContentLoaded", () => {
