@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mobec | EV Transition</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Orbitron:wght@600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header class="hero">
+      <video autoplay muted loop playsinline class="hero-video">
+        <source src="assets/charging.mp4" type="video/mp4" />
+        Your browser does not support the video tag.
+      </video>
+
+      <div class="hero-content animate-fade-up">
+        <h1>
+          <span>Fuel is Fading.</span><br />The Future is
+          <span class="green">Electric.</span>
+        </h1>
+        <p>Mobec is Powering the Change</p>
+      </div>
+    </header>
+
+    <section class="section section-ice-ev" id="section1">
+      <div class="section-content">
+        <div class="section-text">
+          <h2>ICE to EV Conversion</h2>
+          <p>
+            With rising fuel costs and mounting environmental concerns, the
+            transition from Internal Combustion Engine (ICE) vehicles to
+            Electric Vehicles (EVs) is accelerating.<br />
+            Across the globe, ICE-powered vehicles—buses, taxis, delivery vans,
+            and personal cars—are making way for cleaner, smarter electric
+            mobility.<br />
+            <strong
+              >Mobec ensures that EV adoption never stops due to lack of
+              power</strong
+            >—with lightweight, on-demand mobile charging and scalable
+            infrastructure that reaches you wherever you are.<br /><br />
+            <strong>Seamless. Sustainable. Smart.</strong>
+          </p>
+        </div>
+        <div class="section-image">
+          <img src="assets/img.webp" alt="EV Charging" />
+        </div>
+      </div>
+    </section>
+
+    <!-- <section class="section section-policy" id="section2">
+      <div class="section-inner">
+        <h2 class="section-title">Govt. Policies Timeline</h2>
+        <canvas id="policyChart"></canvas>
+      </div>
+    </section> -->
+
+    <section class="section section-ev-policy" id="section5">
+      <div class="section-inner">
+        <h2 class="section-title">
+          Policy Supports for Powering the EV Movement
+        </h2>
+
+        <!-- 🔰 Block 1: Delhi EV Policy -->
+        <div class="policy-block">
+          <div class="policy-text">
+            <h3>Delhi’s EV Policy 2.0 Highlights</h3>
+            <ul class="policy-list">
+              <li>
+                <strong>ICE Three-Wheelers:</strong> No new registration after
+                August 2025; existing CNG permits converted to EV-only.
+                <a
+                  href="https://www.downtoearth.org.in/energy/delhi-ev-policy-20-its-bold-but-not-yet-beautiful?"
+                  target="_blank"
+                  >Source</a
+                >
+              </li>
+              <li>
+                <strong>ICE Two-Wheelers:</strong> New registrations banned from
+                August 2026; strong incentives and subsidies continue.
+                <a
+                  href="https://www.financialexpress.com/auto/bike-news/no-more-petrol-two-wheelers-in-delhi-what-ev-policy-2-0-means-for-you/3809253/?"
+                  target="_blank"
+                  >Source</a
+                >
+              </li>
+              <li>
+                <strong>ICE Cars:</strong> Limit to two ICE cars per
+                household—third must be electric.
+                <a
+                  href="https://www.financialexpress.com/auto/car-news/delhi-ev-policy-2-0-only-2-ice-cars-per-family-to-be-allowed/3821981/?"
+                  target="_blank"
+                  >Source</a
+                >
+              </li>
+              <li>
+                <strong>Goal:</strong> 95% of new registrations electric by
+                2027, rising to 98% by 2030.
+                <a
+                  href="https://e-vehicleinfo.com/delhi-ev-policy-2-0/?"
+                  target="_blank"
+                  >Source</a
+                >
+              </li>
+              <li>
+                <strong>Infrastructure:</strong> Fast-charging every 5 km,
+                battery swapping hubs, and ~20,000 EV jobs.
+                <a
+                  href="https://www.reuters.com/sustainability/climate-energy/indias-delhi-plans-curb-gasoline-car-sales-ban-gas-guzzling-bikes-shed-polluter-2025-04-24/?"
+                  target="_blank"
+                  >Source</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div class="policy-image">
+            <img src="assets/img.webp" alt="Delhi EV Policy" />
+          </div>
+        </div>
+
+        <!-- 🔁 Block 2: National + Global -->
+        <div class="policy-block reverse">
+          <div class="policy-text">
+            <h3>Nationwide & Global</h3>
+            <ul class="policy-list">
+              <li>
+                <strong>India (FAME II):</strong> Subsidies for retrofitted EVs,
+                public transport electrification, and infrastructure
+                development.
+              </li>
+              <li>
+                <strong>Global:</strong> Countries like the UK, Germany, and US
+                offer tax credits, rebates, and low-emission zones to accelerate
+                EV adoption and ICE phase-outs.
+              </li>
+            </ul>
+          </div>
+          <div class="policy-image">
+            <img src="assets/img.webp" alt="Delhi EV Policy" />
+          </div>
+        </div>
+
+        <p class="policy-summary">
+          With strong policy backing, converting to EV isn’t just smart—it’s
+          strategic.
+        </p>
+      </div>
+    </section>
+
+    <section class="section section-benefits" id="section3">
+      <div class="section-inner">
+        <h2 class="section-title">Why Convert? The Clear-Cut Benefits</h2>
+        <p class="benefits-intro">
+          <strong>More KM, Less Cost. More Green, Less Guilt.</strong>
+        </p>
+
+        <!-- 🔋 Range Efficiency -->
+        <div class="benefits-row">
+          <h3 class="benefits-heading">Range Efficiency</h3>
+          <p class="benefits-detail">
+            A retrofitted EV can run <strong>100–150 km</strong> on a single
+            charge, customizable to your use case.
+          </p>
+        </div>
+
+        <div class="benefits-highlight-grid">
+          <!-- Fuel Cost Savings -->
+          <div class="highlight-box">
+            <div class="highlight-icon"><i class="fas fa-gas-pump"></i></div>
+            <h4 class="highlight-title">Fuel Cost Savings</h4>
+            <ul>
+              <li><strong>EV:</strong> ₹1.2/km</li>
+              <li><strong>Diesel:</strong> ₹7/km</li>
+              <li><strong>Petrol:</strong> ₹9/km</li>
+            </ul>
+          </div>
+
+          <!-- Travel Breakdown -->
+          <div class="highlight-box">
+            <div class="highlight-icon"><i class="fas fa-road"></i></div>
+            <h4 class="highlight-title">Travel Breakdown</h4>
+            <ul>
+              <li><strong>Daily:</strong> 100 km</li>
+              <li><strong>Monthly:</strong> 3,000 km</li>
+              <li><strong>Yearly:</strong> 36,000 km</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- 💸 Cost Comparison Cards -->
+        <h3 class="benefits-heading">Annual Fuel Cost Comparison</h3>
+        <div class="comparison-grid">
+          <div class="comparison-card">
+            <h3>Petrol</h3>
+            <p><strong>Cost/km:</strong> ₹9</p>
+            <p><strong>Annual:</strong> ₹3,24,000</p>
+          </div>
+          <div class="comparison-card">
+            <h3>Diesel</h3>
+            <p><strong>Cost/km:</strong> ₹7</p>
+            <p><strong>Annual:</strong> ₹2,52,000</p>
+          </div>
+          <div class="comparison-card ev-highlight">
+            <h3>EV</h3>
+            <p><strong>Cost/km:</strong> ₹1.2</p>
+            <p><strong>Annual:</strong> ₹43,200</p>
+          </div>
+        </div>
+
+        <div class="benefits-grid">
+          <!-- 🔢 Monthly Cost Example -->
+          <div class="benefit-card">
+            <div class="benefit-icon"><i class="fas fa-calendar-alt"></i></div>
+            <h4 class="benefit-title">Monthly Cost Example</h4>
+            <ul class="benefit-list">
+              <li><strong>EV:</strong> 3,000 km × ₹1.2 = ₹3,600</li>
+              <li><strong>Diesel:</strong> 3,000 km × ₹7 = ₹21,000</li>
+              <li><strong>Petrol:</strong> 3,000 km × ₹9 = ₹27,000</li>
+            </ul>
+          </div>
+
+          <!-- 💰 Annual Savings -->
+          <div class="benefit-card">
+            <div class="benefit-icon"><i class="fas fa-wallet"></i></div>
+            <h4 class="benefit-title">Annual Savings with EV</h4>
+            <ul class="benefit-list">
+              <li><strong>vs Diesel:</strong> ₹2,08,800</li>
+              <li><strong>vs Petrol:</strong> ₹2,80,800</li>
+            </ul>
+          </div>
+        </div>
+
+        <p class="benefits-summary">
+          Add lower maintenance, zero tailpipe emissions, and a quieter,
+          smoother ride — and the case for EV conversion becomes a no-brainer.
+        </p>
+      </div>
+    </section>
+
+    <section class="section section-use-cases" id="section4">
+      <div class="section-inner">
+        <h2 class="section-title">Use Cases</h2>
+
+        <div class="use-cards">
+          <div class="card">
+            <div class="icon-circle"><i class="fas fa-truck-moving"></i></div>
+            <p>Fleet Operators</p>
+            <p class="card-desc">
+              Keep your delivery vans and commercial vehicles charged on the go.
+            </p>
+          </div>
+          <!-- <div class="card">
+            <div class="icon-circle"><i class="fas fa-taxi"></i></div>
+            <p>Taxi Services</p>
+            <p class="card-desc">
+              Eliminate downtime with fast, mobile EV charging.
+            </p>
+          </div> -->
+          <div class="card">
+            <div class="icon-circle"><i class="fas fa-bus"></i></div>
+            <p>Electric Buses</p>
+            <p class="card-desc">Get reliable power—anytime, anywhere.</p>
+          </div>
+          <div class="card">
+            <div class="icon-circle"><i class="fas fa-house-user"></i></div>
+            <p>Personal EV Owners</p>
+            <p class="card-desc">
+              Charge at home, work, or on the move with ease.
+            </p>
+          </div>
+          <div class="card">
+            <div class="icon-circle"><i class="fas fa-map-marker-alt"></i></div>
+            <p>Remote Locations</p>
+            <p class="card-desc">
+              Off-grid or remote? We bring the power to you.
+            </p>
+          </div>
+        </div>
+
+        <div class="use-description">
+          <p><strong>Ready to Power Up Your EV?</strong></p>
+          <p>
+            <strong>Charge anywhere. Drive everywhere.</strong><br />
+            Mobec makes electric mobility effortless.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <p>&copy; 2025 Mobec Mobility. All Rights Reserved.</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+    <script>
+      document.addEventListener("DOMContentLoaded", () => {
+        gsap.registerPlugin(ScrollTrigger);
+
+        gsap.utils.toArray(".section").forEach((section) => {
+          gsap.fromTo(
+            section,
+            { opacity: 0, y: 50 },
+            {
+              opacity: 1,
+              y: 0,
+              duration: 1,
+              ease: "power2.out",
+              scrollTrigger: {
+                trigger: section,
+                start: "top 80%",
+                toggleActions: "play none none none",
+              },
+            }
+          );
+        });
+      });
+    </script>
+
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        const ctx = document.getElementById("policyChart").getContext("2d");
+
+        const policyChart = new Chart(ctx, {
+          type: "bar",
+          data: {
+            labels: ["Aug 2025", "Aug 2026", "2026 Onward", "By 2027"],
+            datasets: [
+              {
+                label: "Policy Goal Progress",
+                data: [100, 90, 80, 95],
+                backgroundColor: "#05ff48",
+                borderRadius: 8,
+                barThickness: 40,
+              },
+            ],
+          },
+          options: {
+            responsive: true,
+            maintainAspectRatio: false,
+            scales: {
+              x: {
+                ticks: { color: "#000", font: { size: 14 } },
+                grid: { color: "#ddd" },
+              },
+              y: {
+                beginAtZero: true,
+                max: 100,
+                ticks: {
+                  stepSize: 20,
+                  color: "#000",
+                  callback: (value) => value + "%",
+                  font: { size: 14 },
+                },
+                grid: { color: "#eee" },
+              },
+            },
+            plugins: {
+              legend: {
+                labels: {
+                  color: "#000",
+                  font: {
+                    size: 20, // Increase this value as needed
+                    weight: "bold",
+                  },
+                },
+              },
+              tooltip: {
+                callbacks: {
+                  label: (ctx) => `Target: ${ctx.parsed.y}%`,
+                },
+              },
+            },
+            animation: {
+              duration: 1500,
+              easing: "easeOutBounce",
+            },
+          },
+        });
+      });
+    </script>
+
+    <script>
+      document.addEventListener("scroll", function () {
+        const images = document.querySelectorAll(".policy-image img");
+
+        images.forEach((img) => {
+          const rect = img.getBoundingClientRect();
+          const windowHeight = window.innerHeight;
+
+          if (rect.top < windowHeight && rect.bottom > 0) {
+            const scrollOffset = (windowHeight - rect.top) / windowHeight;
+            const translateY = scrollOffset * -30;
+            img.style.transform = `translateY(${translateY}px)`;
+          }
+        });
+      });
+    </script>
+  </body>
+</html>
