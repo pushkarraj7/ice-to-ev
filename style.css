@@ -281,15 +281,15 @@ h2 {
   margin: 8px 0;
 }
 
-.ev-highlight {
-  background-color: #eaffef;
+/* .ev-highlight {
+  background-color: #188532;
   border: 2px solid #05ff48;
   box-shadow: 0 6px 16px rgba(5, 255, 72, 0.1);
 }
 
 .ev-highlight h3 {
   color: #05b848;
-}
+} */
 
 .benefits-summary {
   margin-top: 50px !important;
@@ -534,13 +534,14 @@ h2 {
   margin: 8px 0;
 }
 
-.card-box p{
+.card-box p {
   color: #000;
 }
 
 /* Highlighted EV Card */
 .ev-highlight {
-  border: 2px solid #05ff48;
+  background-color: #c0f7d4;
+  border: 2px solid #91eda9;
   box-shadow: 0 12px 28px rgba(5, 255, 72, 0.12);
 }
 
@@ -548,6 +549,21 @@ h2 {
   color: #05b848;
 }
 
+.note-text {
+  font-size: 0.95rem;
+  color: #666;
+  background: #f8f8f8;
+  border-left: 4px solid #05b848;
+  padding: 12px 16px;
+  margin-top: 40px;
+  border-radius: 8px;
+  font-style: italic;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.03);
+  max-width: 900px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: left;
+}
 
 /* Section 4 */
 
@@ -659,7 +675,6 @@ h2 {
   margin-top: 10px;
   line-height: 1.4;
 }
-
 
 /* Section 5 */
 
@@ -851,7 +866,6 @@ h2 {
     font-size: 1.4rem;
   }
 }
-
 
 /* Footer */
 
