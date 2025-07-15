@@ -139,7 +139,7 @@ h2 {
   background: linear-gradient(to right, #05ff48, #000000);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  background-clip: text; /* for Firefox */
+  background-clip: text;
   color: transparent;
 }
 
@@ -149,6 +149,14 @@ h2 {
   line-height: 1.7;
   font-family: "Montserrat", sans-serif;
   letter-spacing: 0.3px;
+}
+
+.section-ice-ev .section-text strong {
+  background: linear-gradient(to right, #05ff48, #000000);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text; /* Optional for Firefox */
+  color: transparent;
 }
 
 .section-ice-ev .section-image {
@@ -353,6 +361,27 @@ h2 {
   gap: 30px;
   flex-wrap: wrap;
   margin-top: 40px;
+  position: relative;
+}
+
+/* Horizontal connector line */
+@media (min-width: 768px) {
+  .benefits-highlight-grid::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 5%;
+    right: 5%;
+    height: 2px;
+    background: linear-gradient(to right, #05ff48, #05ff48);
+    z-index: 0;
+  }
+
+  .card-box {
+    position: relative;
+    z-index: 1;
+    background: #fff;
+  }
 }
 
 .highlight-box {
@@ -642,15 +671,23 @@ h2 {
   transform: scale(1.2);
 }
 
-/* Text */
-.card p {
+/* Card Text */
+.card-title {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #222;
   margin: 0;
-  font-size: 1rem;
-  color: #333;
-  font-weight: 500;
 }
 
-/* Description */
+.card-desc {
+  font-size: 0.85rem;
+  color: #666;
+  margin-top: 8px;
+  line-height: 1.5;
+  font-weight: 400;
+}
+
+/* Description below cards */
 .use-description {
   text-align: center;
   margin-top: 50px;
@@ -661,19 +698,13 @@ h2 {
   margin-right: auto;
   color: #222;
 }
+
 .use-description strong {
   background: linear-gradient(to right, #05ff48, #000);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
   color: transparent;
-}
-
-.card-desc {
-  font-size: 0.95rem;
-  color: #666;
-  margin-top: 10px;
-  line-height: 1.4;
 }
 
 /* Section 5 */
